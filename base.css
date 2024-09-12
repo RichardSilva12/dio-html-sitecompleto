@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.menu{
+    width: 15%;
+    background-color: aqua;
+    padding: 10px 20px 0px;
+}
+
+/* Estilizando o menu */
+.menu ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block; /* Exibe os itens horizontalmente */
+    margin-right: 20px; /* Espaço entre os botões */
+}
+
+/* Estilizando os links como botões */
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Efeito de hover: quando o mouse passa por cima */
+.menu a:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilizando os botões quando estão em foco */
+.menu a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+.header {
+    background-color: rgb(5, 108, 108);
+    min-width: 150px;
+}
+
+.content{
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.footer{
+    background-color: rgb(113, 85, 184);
+    min-width: 150px;
+}
+.footer p{
+    text-align: right;
+    padding: 5px 50px;
+}
+
+.header-img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    height: auto; 
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+ /* Estilo geral para o formulário */
+ .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
